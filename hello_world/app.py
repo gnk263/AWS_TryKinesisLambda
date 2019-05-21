@@ -2,8 +2,11 @@ import base64
 import json
 import time
 
+from datetime import datetime
 
 def lambda_handler(event, context):
+    print(datetime.now().isoformat())
+
     records_count = len(event['Records'])
     print(f'kinesis recourds count: {records_count}')
 
