@@ -21,12 +21,11 @@ Resources:
       CodeUri: hello_world/
       Handler: app.lambda_handler
       Runtime: python3.6
-      Environment:
-        Variables:
-          PARAM1: VALUE
       Events:
-        HelloWorld:
-          Type: Api
+        HelloWorldStream:
+          # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#kinesis
+          Type: Kinesis
           Properties:
-            Path: /hello
-            Method: get
+            Stream: !GetAtt TestStream.Arn
+            StartingPosition: LATEST
+            BatchSize: 3
