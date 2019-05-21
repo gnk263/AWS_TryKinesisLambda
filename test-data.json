@@ -1,11 +1,59 @@
 {
     "Records": [
         {
-            "Data": "hoge",
+            "Data": "aaa",
             "PartitionKey": "pk-1"
         },
         {
-            "Data": "fuga",
+            "Data": "bbb",
+            "PartitionKey": "pk-2"
+        },
+        {
+            "Data": "ccc",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "ddd",
+            "PartitionKey": "pk-2"
+        },
+        {
+            "Data": "eee",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "fff",
+            "PartitionKey": "pk-2"
+        },
+        {
+            "Data": "ggg",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "hhh",
+            "PartitionKey": "pk-2"
+        },
+        {
+            "Data": "iii",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "jjj",
+            "PartitionKey": "pk-2"
+        },
+        {
+            "Data": "kkk",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "lll",
+            "PartitionKey": "pk-2"
+        },
+        {
+            "Data": "mmm",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "nnn",
             "PartitionKey": "pk-2"
         }
     ],
