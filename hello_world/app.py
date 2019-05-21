@@ -1,5 +1,6 @@
 import base64
 import json
+import time
 
 
 def lambda_handler(event, context):
@@ -11,6 +12,8 @@ def lambda_handler(event, context):
         data = base64.b64decode(b64_data).decode('utf-8')
 
         print(data)
+
+    # time.sleep(5)
 
     return {
         'statusCode': 200,
