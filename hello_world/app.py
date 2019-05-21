@@ -16,6 +16,8 @@ def lambda_handler(event, context):
 
         print(data)
 
+    time.sleep(0.05)
+    # time.sleep(1)
     # time.sleep(5)
 
     return {
