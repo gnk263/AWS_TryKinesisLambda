@@ -16,5 +16,9 @@ deploy:
 		--template-file packaged.yaml \
 		--stack-name $(STACK_NAME) \
 		--capabilities CAPABILITY_IAM
+
 delete:
 	aws cloudformation delete-stack --stack-name $(STACK_NAME)
+
+put-records:
+	aws kinesis put-records --cli-input-json file://test-data.json

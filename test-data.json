@@ -1,0 +1,13 @@
+{
+    "Records": [
+        {
+            "Data": "hoge",
+            "PartitionKey": "pk-1"
+        },
+        {
+            "Data": "fuga",
+            "PartitionKey": "pk-2"
+        }
+    ],
+    "StreamName": "test-stream"
+}
